@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hala Madrid</title>
+        <link rel="icon" href="Real_Madrid_CF1.png" type="image/x-icon">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Poppins&display=swap" rel="stylesheet">
+    </head>
+    <body>
+    <section id="banner6">
+        <div id="sideNav">
+            <nav>
+                <ul>
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="squad.html">SQUAD</a></li>
+                    <li><a href="honours.html">HONOURS</a></li>
+                    <li><a href="club.html">CLUB</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="menuBtn">
+            <image src="menu.png" id="menu"></image>
+        </div>
+        <script>
+            var manuBtn = document.getElementById("menuBtn")
+            var sideNav = document.getElementById("sideNav")
+            var menu = document.getElementById("menu")
+            sideNav.style.right="-250px"
+    
+        menuBtn.onclick = function(){
+            if(sideNav.style.right == "-250px"){
+                sideNav.style.right = "0";
+                menu.src = "close.png";
+            }
+            else{
+                sideNav.style.right = "-250px";
+                menu.src = "menu.png";
+            }
+        }
+        document.addEventListener("DOMContentLoaded", function(event) {
+    // Fade in news boxes
+    const newsBoxes = document.querySelectorAll('.news-box');
+    newsBoxes.forEach((box, index) => {
+        setTimeout(() => {
+            box.style.opacity = 1;
+            box.style.transform = 'translateY(0)';
+        }, 300 + index * 150); // Adjust timing for staggered appearance
+    });
+});
+        </script>
+    <div class="Real-Squad"><h3>Latest New</h3></div>
+    
+    <div class="news-container">
+        <div class="news-box" onclick="window.location.href='https://www.realmadrid.com/en-US/news/football/first-team/latest-news/jugador-25-05-2024'">
+            <img src="Kroos3.webp" alt="News Image 1" class="news-image">
+            <h8 class="news-title">Kroos: "It's been an unforgettable 10 years"</h8>
+            <p class="news-description">Toni Kroos spoke to Realmadrid TV after playing his last game at the Santiago Bernabéu. After the emotional tribute he received, the Real Madrid legend said: "It's not easy to talk, but I can only say thank you. To all of madridismo, to the club, to my teammates and to the stadium, I've always felt at home. I couldn't ask for more. It's been 10 unforgettable years."</p>
+        </div>
+        <div class="news-box" onclick="window.location.href='https://www.forbes.com/sites/tomsanderson/2024/04/30/real-madrid-icon-considers-retirement-after-ancelotti-fall-out-reports-ok-diario/?sh=36ff2be75db0">
+            <img src="Luka-Modric.jpg" alt="News Image 2" class="news-image">
+            <h2 class="news-title">Luka Modric retirement</h2>
+            <p class="news-description">Real Madrid Icon Considers Retirement After Ancelotti Fall Out, OK Diario Reports</p>
+        </div>
+        <div class="news-box" onclick="window.location.href='https://www.forbes.com/sites/tomsanderson/2024/04/30/real-madrid-icon-considers-retirement-after-ancelotti-fall-out-reports-ok-diario/?sh=36ff2be75db0'">
+            <img src="UCL2.jpeg" alt="News Image 2" class="news-image">
+            <h2 class="news-title">Champions League final: Borussia Dortmund vs Real Madrid – meet the teams</h2>
+            <p class="news-description">Analysis, key players, facts and stats: all you need to know about 2024 UEFA Champions League finalists Borussia Dortmund and Real Madrid.</p>
+        </div>
+        <div class="news-box" onclick="window.location.href='https://www.aljazeera.com/sports/liveblog/2024/5/8/live-real-madrid-vs-bayern-munich-champions-league-semifinal-second-leg#:~:text=Real%20Madrid%20beat%20Bayern%20Munich%202-1%20in%20their%20Champions,final%20minutes%20turned%20the%20tie.'">
+            <img src="Bayern.webp" alt="News Image 2" class="news-image">
+            <h2 class="news-title">Real Madrid vs Bayern Munich 2-1 (4-3): Champions League – as it happened</h2>
+            <p class="news-description">That’s it from our live coverage of the Champions League semifinals.
+
+                Real Madrid beat Bayern Munich 4-3 on aggregate with two late Joselu goals turning the game after Alphonso Davies’s opener at the Bernabeu.
+                
+                Borussia Dortmund await the Spaniards in the final after they beat Paris Saint-Germain on Tuesday.
+                
+                We’ll be back for more live coverage on Friday with the final Paris 2024 Olympic football place up for grabs. It’s Indonesia against Guinea, and you can catch the game, along with all our sports news and features.</p>
+        </div>
+        <div class="news-box" onclick="window.location.href='https://www.realmadrid.com/en-US/news/football/first-team/latest-news/espana-euro-24-27-05-2024'">
+            <img src="EUROCOPA_2024_SPAIN.webp" alt="News Image 2" class="news-image">
+            <h2 class="news-title">Nacho, Carvajal and Joselu have been called up to the Spain squad for the European Championship</h2>
+            <p class="news-description">The three Real Madrid players are included in the preliminary squad for the tournament to be held in Germany.</p>
+        </div>
+        <div class="news-box" onclick="window.location.href='https://bolavip.com/en/soccer/cristiano-ronaldos-former-teammate-may-join-lionel-messis-inter-miami-this-summer'">
+            <img src="DOSI.webp" alt="News Image 2" class="news-image">
+            <h2 class="news-title">Cristiano Ronaldo's former teammate may join Lionel Messi's Inter Miami this summer</h2>
+            <p class="news-description">MLS is receiving several top players recently. Now, it seems like another star could move to the United States, as a former teammate of Cristiano Ronaldo at Real Madrid wants to join Lionel Messi at Inter Miami.
+
+                In 2023, David Beckham, owner of Inter Miami, decided to sign several stars for his club. Lionel Messi, Luis Suarez, Jordi Alba, and Sergio Busquets reunited at the Herons, creating an astonishing squad in the MLS.</p>
+        </div>
+        <div class="news-box">
+            <img src="Coming Soon.avif" alt="News Image 2" class="news-image">
+            <h2 class="news-title">Coming Soon...</h2>
+            <p class="news-description">Coming Soon...</p>
+        </div>
+    </div>
+</body>
+</html>

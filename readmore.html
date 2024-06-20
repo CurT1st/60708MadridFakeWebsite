@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hala Madrid</title>
+        <link rel="icon" href="Real_Madrid_CF1.png" type="image/x-icon">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Poppins&display=swap" rel="stylesheet">
+    </head>
+    <body bgcolor="black">
+    <section id="banner2">
+        <div id="sideNav">
+            <nav>
+                <ul>
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="squad.html">SQUAD</a></li>
+                    <li><a href="honours.html">HONOURS</a></li>
+                    <li><a href="club.html">CLUB</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="menuBtn">
+            <image src="menu.png" id="menu"></image>
+        </div>
+        <script>
+            var manuBtn = document.getElementById("menuBtn")
+            var sideNav = document.getElementById("sideNav")
+            var menu = document.getElementById("menu")
+            sideNav.style.right="-250px"
+    
+        menuBtn.onclick = function(){
+            if(sideNav.style.right == "-250px"){
+                sideNav.style.right = "0";
+                menu.src = "close.png";
+            }
+            else{
+                sideNav.style.right = "-250px";
+                menu.src = "menu.png";
+            }
+        }
+        document.addEventListener('DOMContentLoaded', () => {
+    const aboutUsBox = document.querySelector('.About-us');
+    const clickMe = document.querySelector('.click-me');
+
+    clickMe.addEventListener('click', () => {
+        aboutUsBox.classList.toggle('expanded');
+    });
+});  </script>
+            <div class="About-us-container">
+                <div class="click-me">
+                    <div class="arrow"></div>
+                    <p>About Us!</p>
+                </div>
+                <div class="About-us box collapsed">
+                    <h2>About Us</h2>
+                    <div class="content">
+                        <img src="Real_Madrid_CF1.png" height="300px" width="300px" alt="Real Madrid CF">
+                        <p>Real Madrid is a football club based in Madrid. The club competes in Laliga, the top tier of Spanish football. Founded in 1902 as Madrid Football Club, the club has traditionally worn a white home kit since its inception. The honorific title real is Spanish for "royal" and was bestowed to the club by King Alfonso XIII in 1920 together with the royal crown in the emblem. Real Madrid have played their home matches in the 85,000-capacity.</p>
+                    </div>
+                    <div class="content">
+                        <img src="Julian_Palacios.jpg" height="300px" width="300px" alt="Julian Palacios">
+                        <p>He was one of the first pioneers of football in Madrid, playing for some of the earliest Madrid clubs in existence, such as Sky Football, of which he was a member from 1897 to 1900. Following a breakaway in 1900, he helped form Madrid Football Club, which is now known as Real Madrid, and was its first president and captain.</p>
+                    </div>
+                    <div class="content2">
+                        <img src="Di_stefano_real_madrid_cf_(cropped).png" height="300px" width="300px" alt="Di Stefano">
+                        <p>Santiago Bernabéu became president of Real Madrid in 1943. Under his presidency, the club was rebuilt after the Civil War, and he oversaw the construction of the club's current stadium, Estadio Real Madrid Club de Fútbol (now known as the Santiago Bernabéu), and its training facilities Ciudad Deportiva. Additionally, during the 1950s former Real Madrid Amateurs player Miguel Malbo founded Real Madrid's youth academy, or "cantera," known today as La Fábrica. Beginning in 1953, he embarked upon a strategy of signing world-class players from abroad, the most prominent being Alfredo Di Stéfano.</p>
+                    </div>
+                    <div class="content2">
+                        <img src="Zidane.jpg" height="300px" width="300px" alt="Zidane">
+                        <p>"Treat this as your ground. Lately, you have been playing well. (...) But we have the quality to do everything well.
+            
+                        "Do what you always do - that's all, tomorrow, think positively. Think not just about the return leg. The tie begins tomorrow [Wednesday], here.
+            
+                        "Go into tomorrow's game treating it as though it is a single match, played here.
+            
+                        "We're doing well, we are playing as a team. And we need to defend as one, that is the most important thing.
+            
+                        "It is going to be very important that we play as a team and defender, because later on, the ball will go in for us."</p>
+                    </div>
+                </div>
+            </div>
+        </body>
+    </html>

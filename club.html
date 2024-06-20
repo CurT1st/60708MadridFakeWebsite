@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Santiago Bernabéu - Hala Madrid</title>
+    <link rel="icon" href="Real_Madrid_CF1.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section id="banner4">
+    <header>
+        <div id="sideNav">
+            <nav>
+                <ul>
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="squad.html">SQUAD</a></li>
+                    <li><a href="honours.html">HONOURS</a></li>
+                    <li><a href="club.html">CLUB</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="menuBtn">
+            <img src="menu.png" id="menu" alt="menu button">
+        </div>
+    </header>
+
+    <section id="bernabeu-info" class="container">
+        <font color="white"><h1>Santiago Bernabéu Stadium</h1></font>
+        <div class="image-container">
+            <img src="Bernabeu.webp" alt="Santiago Bernabéu Stadium" class="stadium-img">
+
+            <button class="info-btn" style="top: 20%; left: 30%;">History</button>
+            <button class="info-btn" style="top: 50%; left: 60%;">Features</button>
+            <button class="info-btn" style="top: 80%; left: 40%;">Key Events</button>
+            <button class="info-btn" style="top: 60%; left: 20%;">Recent Renovations</button>
+        </div>
+
+        <div class="info-panel" id="history-panel">
+            <h2>History</h2>
+            <p>The Santiago Bernabéu Stadium, named after the legendary Real Madrid president Santiago Bernabéu, was inaugurated on December 14, 1947. It has since become one of the most famous and prestigious football stadiums in the world.</p>
+        </div>
+
+        <div class="info-panel" id="features-panel">
+            <h2>Features</h2>
+            <ul>
+                <li><strong>Capacity:</strong> 81,044</li>
+                <li><strong>Location:</strong> Madrid, Spain</li>
+                <li><strong>Surface:</strong> Grass</li>
+                <li><strong>Owner:</strong> Real Madrid CF</li>
+            </ul>
+        </div>
+
+        <div class="info-panel" id="events-panel">
+            <h2>Key Events</h2>
+            <p>The Santiago Bernabéu has hosted numerous significant events, including multiple European Cup/Champions League finals, FIFA World Cup matches, and the UEFA Euro 1964 final. It is renowned for its electrifying atmosphere, especially during major matches.</p>
+        </div>
+
+        <div class="info-panel" id="renovations-panel">
+            <h2>Recent Renovations</h2>
+            <p>In recent years, the stadium has undergone extensive renovations to enhance its facilities and increase its capacity. The modernized Bernabéu features a retractable roof, new seating areas, and advanced technological amenities to improve the fan experience.</p>
+        </div>
+    </section>
+
+    <script>
+        var menuBtn = document.getElementById("menuBtn");
+        var sideNav = document.getElementById("sideNav");
+        var menu = document.getElementById("menu");
+
+        sideNav.style.right = "-250px";
+
+        menuBtn.onclick = function() {
+            if (sideNav.style.right === "-250px") {
+                sideNav.style.right = "0";
+                menu.src = "close.png";
+            } else {
+                sideNav.style.right = "-250px";
+                menu.src = "menu.png";
+            }
+        }
+
+        document.querySelectorAll('.info-btn').forEach(button => {
+            button.addEventListener('click', function() {
+                const panelId = button.textContent.toLowerCase() + '-panel';
+                const panel = document.getElementById(panelId);
+                if (panel.style.maxHeight) {
+                    panel.style.maxHeight = null;
+                    panel.style.padding = '0 20px';
+                } else {
+                    document.querySelectorAll('.info-panel').forEach(p => {
+                        p.style.maxHeight = null;
+                        p.style.padding = '0 20px';
+                    });
+                    panel.style.maxHeight = panel.scrollHeight + 'px';
+                    panel.style.padding = '20px';
+                }
+            });
+        });
+    </script>
+</body>
+</html>

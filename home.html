@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hala Madrid</title>
+        <link rel="icon" href="Real_Madrid_CF1.png" type="image/x-icon">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Poppins&display=swap" rel="stylesheet">
+    </head>
+    <body>
+    <section id="banner">
+        <img src="RM2LG2.png" class="logo">
+        <div class="banner-text">
+            <h1>Real Madrid</h1>
+            <p>The Teams Of Dreams, Club de futbol</p>
+            <div class="banner-btn">
+                <a href="about.html"><span></span>Find Out</a>
+                <a href="readmore.html"><span></span>Read More</a>
+            </div>
+        </div>
+    </section>
+    <div id="sideNav">
+        <nav>
+            <ul>
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="squad.html">SQUAD</a></li>
+                <li><a href="honours.html">HONOURS</a></li>
+                <li><a href="club.html">CLUB</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="menuBtn">
+        <image src="menu.png" id="menu"></image>
+    </div>
+    <script>
+        var manuBtn = document.getElementById("menuBtn")
+        var sideNav = document.getElementById("sideNav")
+        var menu = document.getElementById("menu")
+        sideNav.style.right="-250px"
+
+    menuBtn.onclick = function(){
+        if(sideNav.style.right == "-250px"){
+            sideNav.style.right = "0";
+            menu.src = "close.png";
+        }
+        else{
+            sideNav.style.right = "-250px";
+            menu.src = "menu.png";
+        }
+    }
+    </script>
+    </body>
+</html>

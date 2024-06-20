@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hala Madrid</title>
+    <link rel="icon" href="Real_Madrid_CF1.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Poppins&display=swap" rel="stylesheet">
+</head>
+<body style="background-color: black;">
+<section id="banner1">
+    <div id="sideNav">
+        <nav>
+            <ul>
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="squad.html">SQUAD</a></li>
+                <li><a href="honours.html">HONOURS</a></li>
+                <li><a href="club.html">CLUB</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="menuBtn">
+        <img src="menu.png" id="menu" alt="Menu">
+    </div>
+    <script>
+        var menuBtn = document.getElementById("menuBtn");
+        var sideNav = document.getElementById("sideNav");
+        var menu = document.getElementById("menu");
+        sideNav.style.right = "-250px";
+        menuBtn.onclick = function () {
+            if (sideNav.style.right === "-250px") {
+                sideNav.style.right = "0";
+                menu.src = "close.png";
+            } else {
+                sideNav.style.right = "-250px";
+                menu.src = "menu.png";
+            }
+        }
+    </script>
+    <div class="banner-text2"><h1>Champions-Title</h1></div>
+    <div class="Honors-container">
+        <div class="Honors-box">
+            <img src="Ramos2.png" alt="News Image 1" class="news-image">
+            <h2 class="Honors-title">Laliga Champions</h2>
+            <p class="Honors-description">1931–32, 1932–33, 1953–54, 1954–55, 1956–57, 1957–58, 1960–61, 1961–62, 1962–63, 1963–64, 1964–65, 1966–67, 1967–68, 1968–69, 1971–72, 1974–75, 1975–76, 1977–78, 1978–79, 1979–80, 1985–86, 1986–87, 1987–88, 1988–89, 1989–90, 1994–95, 1996–97, 2000–01, 2002–03, 2006–07, 2007–08, 2011–12, 2016–17, 2019–20, 2021–22, 2023–24, 1929, 1933–34, 1934–35, 1935–36, 1941–42, 1944–45, 1958–59, 1959–60, 1965–66, 1980–81, 1982–83, 1983–84, 1991–92, 1992–93, 1998–99, 2004–05, 2005–06, 2008–09, 2009–10, 2010–11, 2012–13, 2014–15, 2015–16, 2020–21, 2022–23</p>
+        </div>
+        <div class="Honors-box">
+            <img src="Campeonato Regional Centro Trofeo Mancomunado.webp" alt="News Image 2" class="news-image">
+            <h2 class="Honors-title">Campeonato Regional Centro / Trofeo Mancomunado</h2>
+            <p class="Honors-description">1903, 1904–05, 1905–06, 1906–07, 1907–08, 1912–13, 1915–16, 1916–17, 1917–18, 1919–20, 1921–22, 1922–23, 1923–24, 1925–26, 1926–27, 1928–29, 1929–30, 1930–31, 1931–32, 1932–33, 1933–34, 1934–35, 1935–36, 1902–03, 1910–11, 1914–15, 1918–19, 1924–25, 1927–28, 1939–40</p>
+        </div>
+        <div class="Honors-box">
+            <img src="Copa de rey.jpg" alt="News Image 2" class="news-image">
+            <h2 class="Honors-title">Copa del Rey</h2>
+            <p class="Honors-description">1905, 1906, 1907, 1908, 1917, 1934, 1936, 1946, 1947, 1961–62, 1969–70, 1973–74, 1974–75, 1979–80, 1981–82, 1988–89, 1992–93, 2010–11, 2013–14, 2022–23</p>
+        </div>
+        <div class="Honors-box">
+            <img src="Supercopa2.avif" alt="News Image 2" class="news-image">
+            <h2 class="Honors-title">Supercopa de España</h2>
+            <p class="Honors-description"> 1988, 1989, 1990, 1993, 1997, 2001, 2003, 2008, 2012, 2017, 2020, 2022, 2024</p>
+        </div>
